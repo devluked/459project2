@@ -23,7 +23,7 @@ public class CompliantNode implements Node {
         _followees = followees;
     }
 
-    public void setPendingTransaction(Set<Transaction> pendingTransactions) { //<--- check this function
+    public void setPendingTransaction(Set<Transaction> pendingTransactions) { 
         // IMPLEMENT THIS
         _pendingTransactions = pendingTransactions;
     }
@@ -33,7 +33,7 @@ public class CompliantNode implements Node {
         return _pendingTransactions;
     }
 
-    public void receiveCandidates(ArrayList<Integer[]> candidates) { //<-- check this function
+    public void receiveCandidates(ArrayList<Integer[]> candidates) { 
         // IMPLEMENT THIS
         for(Integer[] i : candidates){
             for(int k = 0; k < i.length; k++){
